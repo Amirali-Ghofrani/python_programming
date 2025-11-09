@@ -1,6 +1,7 @@
 
 # how to define a string in python:
 
+print("\n*string definition:\n")
 my_str0 = 'be grateful!'
 my_str1 = "let's have some fun!"
 my_str2 = "01234567"
@@ -16,6 +17,7 @@ print(my_index1)                 # prints !
 
 
 # index slicing:
+print("\n\n**string slicing:")
 
 my_slice = my_str0[3:11]        
 print(my_slice)                  # prints grateful
@@ -62,9 +64,28 @@ print(my_str5)
 print((my_str5 + " ") * 3)
 
 # methods:
+print("\n\n***string methods:")
 
 print(my_str0.islower())       # prints True
 my_str0 = my_str0.upper()
 print(my_str0)                 # prints BE GRATEFUL!
 
 print(my_str0.index("B"))      # prints 0
+
+# string interpolation:
+print("\n\n****string interpolation:")
+
+my_str6 = "\n Hello\n {}\n {}\n {}".format(my_str0, my_str1, my_str2)
+print(my_str6)
+
+my_str7 = "\n Hello\n {1}\n {0}\n {2}".format(my_str0, my_str1, my_str2)
+print(my_str7)
+
+
+my_str8 = "\n Hello\n {phrase1}\n {phrase2}\n {numbers}".format(phrase1 = my_str0,
+                                                                phrase2 =  my_str1, 
+                                                                numbers = my_str2)
+print(my_str8)
+
+my_str9 = f"\n Hello\n {my_str0}\n {my_str1}\n {my_str2}"
+print(my_str9)
