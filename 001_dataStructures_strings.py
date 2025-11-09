@@ -60,3 +60,11 @@ print(my_str5)
 
 # how to multiply strings!!:
 print((my_str5 + " ") * 3)
+
+# methods:
+
+print(my_str0.islower())       # prints True
+my_str0 = my_str0.upper()
+print(my_str0)                 # prints BE GRATEFUL!
+
+print(my_str0.index("B"))      # prints 0
