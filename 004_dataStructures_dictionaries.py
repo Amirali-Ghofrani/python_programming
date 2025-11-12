@@ -34,3 +34,17 @@ print(values, type(values))
 # how to return keys and values:
 items = score.items()
 print(items, type(items))
+
+
+# how to get values for a key without causing error for a missing key:
+print (score.get("math"), -1)         # prints 90(math score) and -1
+print(score.get("chemistery"), -1)    # prints only -1, doesnt cause errors!
+
+# nested lists in a dictionary:
+school_class = {
+    "first" : ["mike", "robbert", "sara"],
+    "second" : ["joe", "alphred","antonio"]
+}
+
+print(school_class["first"][1])    # prints robbert
+
