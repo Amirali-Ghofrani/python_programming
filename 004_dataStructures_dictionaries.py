@@ -48,3 +48,8 @@ school_class = {
 
 print(school_class["first"][1])    # prints robbert
 
+# how to assign a new value to a key
+score["math"] = 100
+# how to remove a key and its value
+score.pop("science")
+print (score)
