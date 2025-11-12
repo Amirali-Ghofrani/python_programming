@@ -47,3 +47,7 @@ print(my_list3)
 # how to add a value to the end of a list:
 my_list3.append(10)
 print(my_list3)
+
+# a seperate list can also be stored into a list:
+my_list4 = ["banana", "apple", [0, 1, 2, 3]]
+print(my_list4[2][0])
