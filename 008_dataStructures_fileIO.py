@@ -29,3 +29,17 @@ print(file3, type(file3))
 
 # flush and end the process for the file:
 f.close()
+
+# another way is using "with" keyword:
+# opens a block and closes the file at the end of the block automatically:
+
+with open("myfile.txt") as f:
+    lines = f.readlines()
+    print(lines)
+
+# modes for open: "a" indicated "append" mode
+output = open("myfile.txt", "a")
+output.write("and this is a new line!")
+myfile4 = output
+print(myfile4)
+output.close()
