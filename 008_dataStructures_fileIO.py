@@ -37,7 +37,7 @@ with open("myfile.txt") as f:
     lines = f.readlines()
     print(lines)
 
-# modes for open: "a" indicated "append" mode
+# modes for open() function: "a" indicates "append" mode
 output = open("myfile.txt", "a")
 output.write("and this is a new line!")
 myfile4 = output
