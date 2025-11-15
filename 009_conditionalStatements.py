@@ -16,5 +16,12 @@ elif 50 <= grade < 80:
 elif grade < 50:
     print("more effort makes the results better!\n", "score: ", score, sep = "")
     
+    
+
+# another form:
+height = 180
+ 
+stature = "tall" if height >= 180 else "not tall" 
+print("\n", stature, sep="")
 
     
