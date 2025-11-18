@@ -10,7 +10,7 @@ print(my_nums)
 
 n = 10_000
 
-for i in range (n):                                # generates a random number between 1 to 10 for n times! (10,000)
+for i in range (n):                                # generates a random number between 1 to 10 for n times! (n = 10,000)
     random_number = randint(1, 10)
     for j in my_nums:
         if random_number == j:
