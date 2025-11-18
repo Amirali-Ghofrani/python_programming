@@ -28,4 +28,4 @@ def main():
 main()              # calling the main function
 
 # function parameters are dynamic type in python, so they can deffer in type(int,
-# string,...) each time the function is called
+      
