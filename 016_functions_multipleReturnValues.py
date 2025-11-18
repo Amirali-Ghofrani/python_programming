@@ -1,5 +1,5 @@
 # the below function gets a list of numbers, and returns a list of odd numbers,
-# the count of odd numbers and the count of total numbers:
+# the count of odd numbers and the count of total numbers all 3 as a tuple:
 
 def myOdds(nums):
     odds_count = 0
@@ -17,6 +17,8 @@ def main():
 
     total_count, odds_count, odds_list = myOdds(my_list)
 
-    print(f"total count is: {total_count}\nodds count is:{odds_count}\nodd numbers are: {odds_list}")
+    print(f"total count is: {total_count}\n"
+          f"odds count is:{odds_count}\n"
+          f"odd numbers are: {odds_list}")
 
 main()
