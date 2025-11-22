@@ -1,9 +1,11 @@
 # how to define a class:
 # creating an object called Book:
-# note: 'self' is not a key word and it's just used as a conventional word, it refers to the object
-# without using self, our variables would be local and not the object attributes
+# note: 'self' is not a key word and it's just used as a conventional word, it refers to the object instance
+# without using self, our variables would be local to the entire class, and not the object instance attributes
 
 class Book():
+    genere = "thriller"
+
     def getInfo(self, n,p): 
         self.name = n
         self.pages = p
@@ -14,6 +16,15 @@ class Book():
 my_book = Book()
 my_book.getInfo("the book of jungle!", 340)
 my_book.printInfo()
+print(my_book.genere)
+
+# we can change the values of our objects:
+my_book.genere = "romance"
+print(Book.genere, my_book.genere)
+
+# we can also change the values for class level local variables:
+Book.genere = "drama"
+print(Book.genere, my_book.genere)
 
 
 
@@ -33,4 +44,4 @@ print(my_car.model, my_car.color)
 my_car2 = Car()
 print(my_car2.model, my_car2.color)
 
-    
+     
