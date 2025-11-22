@@ -18,13 +18,13 @@ print()
 
 # filtering concept:
 nums = [0, 1, 2, 5, 6.23, 3.14, 9.56, 10.44]
-def floatingNums (x):                       # gets a number and returns True if it's a floating point number
+def floatingNums (x):                          # gets a number and returns True if it's a floating point number
     if x != int(x):
         return True
     return False
 
-my_floats = map(floatingNums, nums)       # runs the 'floatingNums' on each element of my_floats 
-for i in my_floats:                       # prints elements in 'my_floats'  
+my_floats = map(floatingNums, nums)           # runs the 'floatingNums' on each element of my_floats 
+for i in my_floats:                          # prints elements in 'my_floats'  
     print(i, end = " ")  
 print()           
 
