@@ -1,4 +1,4 @@
-class Circle():                         # creates a class called Circle
+class Circle():                               # creates a class called Circle
     pi = 3.1415926
 
     def __init__(self, r):
@@ -12,9 +12,12 @@ class Circle():                         # creates a class called Circle
         cir = 2 * self.pi * self.r
         return cir
     
+    
 def main():
     c1 = Circle(5)                     # initiates an object from the class Circle, gets a parameter as the circle radius
-    print(c1.area())                   # uses class methods to calculate c1 area and circumference
-    print(c1.circumference())
+    print("area: ", c1.area())         # uses class methods to calculate c1 area and circumference
+    print("circumference: "
+          , c1.circumference())
+
 
 main()
