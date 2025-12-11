@@ -7,3 +7,6 @@ def hoopGame(x, y):
         else:
             nums.append(i)
     return nums
+
+if __name__ == "__main__":
+    print("testing the package module...!")

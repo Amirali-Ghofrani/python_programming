@@ -30,7 +30,10 @@ def main():
         result = jackage.game.hoopGame(x, hoop)      # uses the game module inside jackage to 
         print(result)                                # run the hoop game
 
-
+    
 
 main()
+
+# __name__ is a python built-in variable to manage packages
+# __name__ value will be "__main__" if the module executes directly 
 

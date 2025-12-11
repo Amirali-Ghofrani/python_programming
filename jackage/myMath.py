@@ -9,3 +9,6 @@ def cir(r, pi):           # gets redius and pi number and returns circle circumf
 def cirArea(r, pi):        # gets redius and pi number and returns circle area
     area = pi * r * r
     return area
+
+if __name__ == "__main__":
+    print("testing the package module...!")
